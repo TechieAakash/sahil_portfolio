@@ -12,33 +12,8 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
     <div className="min-h-screen text-[#1D1D1F]">
       {/* 1. EDITORIAL HERO SECTION */}
       <section className="relative pt-36 md:pt-44 pb-20 md:pb-28 px-6 md:px-12 max-w-6xl mx-auto text-center overflow-hidden">
-        {/* Delicate Pattern of Small Embossed Arizona Poppies in the Background of the Texts */}
-        <div
-          className="absolute inset-0 max-w-4xl mx-auto rounded-3xl pointer-events-none select-none -z-10 opacity-75 mix-blend-multiply overflow-hidden transition-opacity duration-500"
-          style={{
-            backgroundImage: "url('/textures/small_poppies_bg.webp')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-          aria-hidden="true"
-        >
-          {/* Subtle soft gradient fade into the sandy page base */}
-          <div
-            className="w-full h-full"
-            style={{
-              background: "radial-gradient(ellipse at 50% 50%, transparent 35%, rgba(247, 244, 238, 0.85) 90%, #F7F4EE 100%)",
-            }}
-          />
-        </div>
-
-        {/* Subtle Sandy Pill Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full sandy-pill text-xs font-mono tracking-wider uppercase mb-8 shadow-sm">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#8C253B]" />
-          <span>Product Experience &amp; Interaction Design</span>
-        </div>
-
-        {/* Hero Typography — Directly over the Embossed Botanical Artwork */}
-        <div className="space-y-5 max-w-3xl mx-auto mb-10 relative z-10">
+        {/* Hero Typography — Directly on the Subtle Grid Background with 100% Visibility */}
+        <div className="space-y-6 max-w-3xl mx-auto mb-10 relative z-10">
           <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight text-[#1D1D1F] leading-[1.02]">
             Sahil Husain
           </h1>
@@ -72,36 +47,36 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
           </button>
         </div>
 
-        {/* Highlights Bar */}
-        <div className="mt-16 pt-8 border-t border-[#E5DFD5] grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-4xl mx-auto">
-          <div className="p-4 rounded-2xl bg-white/80 border border-[#E5DFD5]">
-            <span className="block font-mono text-[10px] text-[#736E65] uppercase tracking-wider mb-1">
-              Background
-            </span>
-            <span className="text-sm font-semibold text-[#1D1D1F] block">
-              M.Des NID &amp; B.Des NIFT
-            </span>
-            <span className="text-xs text-[#736E65]">India's Premier Design Institutes</span>
-          </div>
-
-          <div className="p-4 rounded-2xl bg-white/80 border border-[#E5DFD5]">
-            <span className="block font-mono text-[10px] text-[#736E65] uppercase tracking-wider mb-1">
+        {/* Highlights Bar — Direct on Background without box structures, 100% visibility */}
+        <div className="mt-16 pt-8 border-t border-[#E5DFD5] flex flex-col sm:grid sm:grid-cols-3 gap-8 text-left max-w-4xl mx-auto">
+          {/* 1. Samsung Industry First */}
+          <div className="space-y-1">
+            <span className="block font-mono text-xs font-semibold text-[#5A544A] uppercase tracking-wider">
               Industry Focus
             </span>
-            <span className="text-sm font-semibold text-[#1D1D1F] block">
-              Samsung ICXT Innovation
+            <span className="text-xl sm:text-2xl font-bold text-[#1D1D1F] block tracking-tight">
+              Samsung Electronics
             </span>
-            <span className="text-xs text-[#736E65]">Connected Living &amp; CMF Strategy</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-white/80 border border-[#E5DFD5]">
-            <span className="block font-mono text-[10px] text-[#736E65] uppercase tracking-wider mb-1">
+          {/* 2. Background Second */}
+          <div className="space-y-1">
+            <span className="block font-mono text-xs font-semibold text-[#5A544A] uppercase tracking-wider">
+              Background
+            </span>
+            <span className="text-xl sm:text-2xl font-bold text-[#1D1D1F] block tracking-tight">
+              M.Des NID &amp; B.Des NIFT
+            </span>
+          </div>
+
+          {/* 3. Location Third */}
+          <div className="space-y-1">
+            <span className="block font-mono text-xs font-semibold text-[#5A544A] uppercase tracking-wider">
               Location
             </span>
-            <span className="text-sm font-semibold text-[#1D1D1F] block">
+            <span className="text-xl sm:text-2xl font-bold text-[#1D1D1F] block tracking-tight">
               New Delhi, India
             </span>
-            <span className="text-xs text-[#736E65]">Open for global design initiatives</span>
           </div>
         </div>
       </section>
