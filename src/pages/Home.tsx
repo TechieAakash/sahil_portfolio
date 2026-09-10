@@ -48,33 +48,33 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
         </div>
 
         {/* Highlights Bar — Direct on Background without box structures, 100% visibility */}
-        <div className="mt-16 pt-8 border-t border-[#E5DFD5] flex flex-col sm:grid sm:grid-cols-3 gap-8 text-left max-w-4xl mx-auto">
+        <div className="mt-16 pt-8 border-t border-[#E5DFD5] flex flex-col sm:grid sm:grid-cols-3 gap-6 sm:gap-8 text-left max-w-4xl mx-auto">
           {/* 1. Samsung Industry First */}
-          <div className="space-y-1">
-            <span className="block font-mono text-xs font-semibold text-[#5A544A] uppercase tracking-wider">
-              Industry Focus
+          <div>
+            <span className="block font-mono text-[10px] text-[#736E65] uppercase tracking-wider mb-1">
+              Industry
             </span>
-            <span className="text-xl sm:text-2xl font-bold text-[#1D1D1F] block tracking-tight">
+            <span className="text-sm font-semibold text-[#1D1D1F] block">
               Samsung Electronics
             </span>
           </div>
 
           {/* 2. Background Second */}
-          <div className="space-y-1">
-            <span className="block font-mono text-xs font-semibold text-[#5A544A] uppercase tracking-wider">
+          <div>
+            <span className="block font-mono text-[10px] text-[#736E65] uppercase tracking-wider mb-1">
               Background
             </span>
-            <span className="text-xl sm:text-2xl font-bold text-[#1D1D1F] block tracking-tight">
+            <span className="text-sm font-semibold text-[#1D1D1F] block">
               M.Des NID &amp; B.Des NIFT
             </span>
           </div>
 
           {/* 3. Location Third */}
-          <div className="space-y-1">
-            <span className="block font-mono text-xs font-semibold text-[#5A544A] uppercase tracking-wider">
+          <div>
+            <span className="block font-mono text-[10px] text-[#736E65] uppercase tracking-wider mb-1">
               Location
             </span>
-            <span className="text-xl sm:text-2xl font-bold text-[#1D1D1F] block tracking-tight">
+            <span className="text-sm font-semibold text-[#1D1D1F] block">
               New Delhi, India
             </span>
           </div>
@@ -86,14 +86,14 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 pb-4 border-b border-[#E5DFD5]">
           <div>
             <span className="font-mono text-xs uppercase tracking-widest text-[#736E65] block mb-1">
-              Selected Work
+              Industry Work
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[#1D1D1F]">
-              Featured Case Studies
+              Recent Projects
             </h2>
           </div>
           <span className="font-mono text-xs text-[#736E65]">
-            3 In-Depth Research &amp; Experience Projects
+            In-Depth Research &amp; Design Projects
           </span>
         </div>
 
@@ -108,7 +108,7 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
               <div className="space-y-4 max-w-2xl">
                 <div className="flex items-center gap-3">
                   <span className="px-3 py-1 rounded-full bg-[#FBF0F2] text-[#8C253B] font-mono text-xs font-semibold border border-[#F3D7DC]">
-                    Project 01 • Samsung ICXT
+                    Project 01 • Samsung Electronics
                   </span>
                   <span className="font-mono text-xs text-[#736E65]">
                     #HarGharKuchKehtaHai

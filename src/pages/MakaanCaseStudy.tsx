@@ -24,7 +24,7 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
       <section className="px-6 md:px-12 max-w-6xl mx-auto pb-16 border-b border-stone-200">
         <div className="flex items-center justify-between gap-4 mb-8">
           <span className="font-mono text-xs uppercase tracking-widest text-[#8C253B] font-bold">
-            Project 01 • Samsung ICXT
+            Project 01 • Samsung Electronics
           </span>
           <span className="font-mono text-xs text-stone-500 uppercase">
             {MAKAAN_DATA.hashtag}

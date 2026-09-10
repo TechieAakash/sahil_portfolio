@@ -15,7 +15,7 @@ const ALL_SLIDES: LightboxItem[] = Array.from({ length: 49 }, (_, i) => {
   if (page === 1) title = 'Hello ! Design Portfolio (Sahil Husain, New Delhi)';
   else if (page === 2) title = 'Meet Sahil (M.Des NID, B.Des NIFT)';
   else if (page === 3) title = 'Contents / Projects Overview';
-  else if (page === 4) title = '01 — Future of Connected Living (Samsung ICXT)';
+  else if (page === 4) title = '01 — Future of Connected Living (Samsung Electronics)';
   else if (page === 5) title = 'Project Makaan (#HarGharKuchKehtaHai)';
   else if (page === 6) title = 'Context: Home as an Intelligent Companion';
   else if (page === 7) title = 'Research Methodology: 5 Zones of India & Housing Types';
@@ -28,7 +28,7 @@ const ALL_SLIDES: LightboxItem[] = Array.from({ length: 49 }, (_, i) => {
   else if (page === 14) title = 'Experience Flow: 6 Step Intent Cycle & Learning Loop';
   else if (page === 15) title = 'Low Fidelity Wireframes: 5 Screen Architectures';
   else if (page === 16) title = 'High Fidelity Mockups within Samsung SmartThings';
-  else if (page === 17) title = '02 — Specialized Care Experience (Samsung)';
+  else if (page === 17) title = '02 — Specialized Care Experience (Samsung Electronics)';
   else if (page === 18) title = 'Sneaker Care: Rising Sneaker-Head Culture in India';
   else if (page === 19) title = 'India Sneaker Market ($4.5B) & Local Startup Ecosystem';
   else if (page === 20) title = 'The Problem: Sneaker Washing Remains a Challenge';
