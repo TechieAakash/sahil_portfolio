@@ -31,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#F7F4EE]/92 backdrop-blur-md border-b border-[#E5DFD5] py-3 shadow-[0_2px_15px_rgba(50,40,30,0.03)]'
+          ? 'bg-[#F7F4EE] border-b border-[#E5DFD5] py-3'
           : 'bg-transparent py-4 border-b border-transparent'
       }`}
     >
@@ -132,9 +132,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
         </button>
       </div>
 
-      {/* Mobile Glassmorphic Drawer */}
+      {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-2xl border-b border-black/[0.08] px-6 py-6 shadow-2xl animate-in fade-in slide-in-from-top-4 duration-200">
+        <div className="md:hidden bg-[#F7F4EE] border-b border-[#E5DFD5] px-6 py-6 shadow-xl animate-in fade-in slide-in-from-top-4 duration-200">
           <div className="flex flex-col gap-3 text-sm font-medium text-[#1D1D1F]">
             <button
               onClick={() => handleNavClick('home')}
