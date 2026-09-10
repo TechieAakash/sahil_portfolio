@@ -108,15 +108,35 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-stone-900 selection:bg-stone-900 selection:text-white">
-      {/* Editorial Navigation */}
-      <Navbar
-        currentView={currentView}
-        onNavigate={handleNavigate}
+    <div className="min-h-screen flex flex-col bg-[#F7F4EE] text-stone-900 selection:bg-stone-900 selection:text-white relative">
+      {/* Subtle Architectural Botanical Bas-Relief Tile Background Texture */}
+      <div
+        className="fixed inset-0 pointer-events-none z-0 bg-repeat opacity-[0.075] mix-blend-multiply transition-opacity duration-300"
+        style={{
+          backgroundImage: "url('/textures/botanical-tiles.webp')",
+          backgroundSize: "680px auto",
+        }}
+        aria-hidden="true"
+      />
+      {/* Subtle radial softening for harmonious reading comfort */}
+      <div
+        className="fixed inset-0 pointer-events-none z-0"
+        style={{
+          background: "radial-gradient(circle at 50% 25%, transparent 40%, rgba(247, 244, 238, 0.5) 100%)",
+        }}
+        aria-hidden="true"
       />
 
+      {/* Editorial Navigation */}
+      <div className="relative z-40">
+        <Navbar
+          currentView={currentView}
+          onNavigate={handleNavigate}
+        />
+      </div>
+
       {/* Main View Container */}
-      <main className="flex-grow">
+      <main className="flex-grow relative z-10">
         {currentView === 'home' && (
           <Home
             onSelectProject={handleNavigate}
