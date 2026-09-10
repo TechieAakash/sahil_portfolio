@@ -12,15 +12,22 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
     <div className="min-h-screen text-[#1D1D1F]">
       {/* 1. EDITORIAL HERO SECTION */}
       <section className="relative pt-36 md:pt-44 pb-20 md:pb-28 px-6 md:px-12 max-w-6xl mx-auto text-center overflow-hidden">
-        {/* Exact Arizona Poppy Embossed Botanical Design in the Background of the Texts */}
+        {/* Delicate Pattern of Small Embossed Arizona Poppies in the Background of the Texts */}
         <div
-          className="absolute top-[48%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[460px] md:w-[560px] pointer-events-none select-none -z-10 opacity-85 mix-blend-multiply transition-opacity duration-500"
+          className="absolute inset-0 max-w-4xl mx-auto rounded-3xl pointer-events-none select-none -z-10 opacity-75 mix-blend-multiply overflow-hidden transition-opacity duration-500"
+          style={{
+            backgroundImage: "url('/textures/small_poppies_bg.webp')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
           aria-hidden="true"
         >
-          <img
-            src="/textures/poppy_hero_2x.webp"
-            alt="Embossed Arizona Poppy Botanical Relief"
-            className="w-full h-auto object-contain mx-auto"
+          {/* Subtle soft gradient fade into the sandy page base */}
+          <div
+            className="w-full h-full"
+            style={{
+              background: "radial-gradient(ellipse at 50% 50%, transparent 35%, rgba(247, 244, 238, 0.85) 90%, #F7F4EE 100%)",
+            }}
           />
         </div>
 
