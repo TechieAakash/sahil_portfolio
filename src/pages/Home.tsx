@@ -1,348 +1,388 @@
 import React from 'react';
-import { ArrowUpRight, Sparkles, MoveDown, Compass, Award, ExternalLink } from 'lucide-react';
+import { ArrowUpRight, ArrowRight, Sparkles, Layers, Cpu, Users, Eye, ShieldCheck } from 'lucide-react';
 import { SAHIL_PROFILE, PROJECTS_OVERVIEW } from '../data/portfolioData';
-import { SectionLabel } from '../components/SectionLabel';
-import { PdfPageImage } from '../components/PdfPageImage';
 
 interface HomeProps {
   onSelectProject: (projectId: string) => void;
   onOpenSlide: (src: string, title: string, pageNum: number) => void;
 }
 
-export const Home: React.FC<HomeProps> = ({ onSelectProject, onOpenSlide }) => {
+export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
   return (
-    <div className="min-h-screen">
-      {/* 1. EDITORIAL HERO (Section 7) */}
-      <section className="relative min-h-[92vh] flex flex-col justify-between pt-28 pb-16 px-6 md:px-12 max-w-6xl mx-auto border-b border-stone-200/80">
-        {/* Top greeting */}
-        <div className="flex items-center justify-between">
-          <div className="space-y-1">
-            <span className="font-mono text-xs uppercase tracking-widest text-stone-600 block">
-              Portfolio Index 2026
-            </span>
-            <h2 className="text-3xl md:text-4xl font-normal text-stone-900 tracking-tight">
-              Hello !
-            </h2>
-          </div>
+    <div className="min-h-screen bg-[#FAF9F6] text-[#1D1D1F]">
+      {/* 1. APPLE-STYLE HERO SECTION */}
+      <section className="relative pt-36 md:pt-44 pb-20 md:pb-28 px-6 md:px-12 max-w-6xl mx-auto text-center overflow-hidden">
+        {/* Subtle Ambient Radial Light (Apple Keynote Style) */}
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] md:w-[900px] h-[400px] bg-gradient-to-b from-amber-100/40 via-purple-50/30 to-transparent blur-3xl pointer-events-none -z-10" />
 
-          <div className="hidden sm:block text-right">
-            <span className="font-mono text-xs text-stone-600 block tracking-widest uppercase">
-              Positioning
-            </span>
-            <span className="text-sm font-medium text-stone-800">
-              Product &amp; Experience Designer
-            </span>
-          </div>
+        {/* Apple-style Frosted Pill Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full apple-glass-pill text-[#515154] text-xs font-mono tracking-wider uppercase mb-8 shadow-sm">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+          <span>Product Experience &amp; Interaction Design</span>
         </div>
 
-        {/* Center Editorial Title */}
-        <div className="my-16 md:my-24">
-          <span className="block font-mono text-xs md:text-sm tracking-widest uppercase text-stone-600 mb-3">
-            Sahil Husain / Selected Works
-          </span>
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-stone-950 uppercase leading-[0.9] select-none">
-            Design<br />Portfolio
+        {/* Apple-style Large Typography */}
+        <div className="space-y-4 max-w-4xl mx-auto">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight text-[#1D1D1F] leading-[1.02]">
+            Sahil Husain
           </h1>
-          <p className="mt-6 text-base md:text-xl text-stone-600 max-w-2xl font-light leading-relaxed">
-            Multidisciplinary design at the intersection of technology, people, and everyday experiences.
+          <p className="text-xl sm:text-2xl md:text-3xl font-light text-[#515154] tracking-tight max-w-3xl mx-auto leading-relaxed">
+            Designing intelligent systems at the intersection of <span className="text-black font-normal">technology</span>, <span className="text-black font-normal">people</span>, and <span className="text-black font-normal">everyday experiences</span>.
           </p>
         </div>
 
-        {/* Bottom Hero Bar */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 pt-6 border-t border-stone-200">
-          <div>
-            <span className="block font-mono text-xs uppercase tracking-widest text-stone-600">
-              Designer &amp; Researcher
+        {/* Apple-style Action Buttons */}
+        <div className="flex flex-wrap items-center justify-center gap-4 mt-10">
+          <button
+            onClick={() => {
+              document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="px-7 py-3.5 rounded-full bg-[#1D1D1F] hover:bg-black text-white font-medium text-sm tracking-tight transition-all shadow-md hover:shadow-lg flex items-center gap-2 group"
+          >
+            <span>Explore Case Studies</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+          </button>
+
+          <button
+            onClick={() => {
+              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="px-7 py-3.5 rounded-full apple-glass hover:bg-white text-[#1D1D1F] font-medium text-sm tracking-tight transition-all shadow-sm"
+          >
+            About Sahil
+          </button>
+        </div>
+
+        {/* Apple Keynote Style Highlights Bar */}
+        <div className="mt-16 pt-8 border-t border-black/[0.06] grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-4xl mx-auto">
+          <div className="p-4 rounded-2xl apple-glass-subtle">
+            <span className="block font-mono text-[10px] text-[#86868B] uppercase tracking-wider mb-1">
+              Background
             </span>
-            <span className="text-lg md:text-xl font-bold text-stone-900">
-              Sahil Husain
+            <span className="text-sm font-semibold text-[#1D1D1F] block">
+              M.Des NID &amp; B.Des NIFT
             </span>
+            <span className="text-xs text-[#86868B]">India's Premier Design Institutes</span>
           </div>
 
-          <div className="text-left sm:text-center">
-            <span className="block font-mono text-xs uppercase tracking-widest text-stone-600">
-              Based In
+          <div className="p-4 rounded-2xl apple-glass-subtle">
+            <span className="block font-mono text-[10px] text-[#86868B] uppercase tracking-wider mb-1">
+              Industry Focus
             </span>
-            <span className="text-base font-semibold text-stone-800">
+            <span className="text-sm font-semibold text-[#1D1D1F] block">
+              Samsung ICXT Innovation
+            </span>
+            <span className="text-xs text-[#86868B]">Connected Living &amp; CMF Strategy</span>
+          </div>
+
+          <div className="p-4 rounded-2xl apple-glass-subtle">
+            <span className="block font-mono text-[10px] text-[#86868B] uppercase tracking-wider mb-1">
+              Location
+            </span>
+            <span className="text-sm font-semibold text-[#1D1D1F] block">
               New Delhi, India
             </span>
-          </div>
-
-          <div className="text-left sm:text-right">
-            <span className="block font-mono text-xs uppercase tracking-widest text-stone-600">
-              Education
-            </span>
-            <span className="font-mono text-xs text-stone-800 font-semibold block">
-              M.Des — NID India
-            </span>
-            <span className="font-mono text-xs text-stone-800 font-semibold block">
-              B.Des — NIFT India
-            </span>
+            <span className="text-xs text-[#86868B]">Open for global design initiatives</span>
           </div>
         </div>
       </section>
 
-      {/* 2. ABOUT / MEET SAHIL (Section 8) */}
-      <section id="about" className="py-24 px-6 md:px-12 max-w-6xl mx-auto border-b border-stone-200/80">
-        <SectionLabel category="Introduction" number="00" title="Meet Sahil" />
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mt-10">
-          {/* Left: Sahil's Portrait & Credentials (5 cols) */}
-          <div className="lg:col-span-5 space-y-6">
-            <div className="relative group overflow-hidden rounded-2xl bg-stone-900 shadow-xl aspect-[4/5] border border-stone-800">
-              <img
-                src={SAHIL_PROFILE.image}
-                alt="Sahil Husain"
-                className="w-full h-full object-cover object-top filter grayscale contrast-105 group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent flex flex-col justify-end p-6">
-                <span className="font-mono text-xs text-white/70 tracking-widest uppercase">
-                  M.DES : NID INDIA • B.DES : NIFT INDIA
-                </span>
-                <span className="text-white font-bold text-xl tracking-tight mt-1">
-                  Sahil Husain
-                </span>
-                <span className="text-stone-300 text-xs font-mono">
-                  New Delhi, India
-                </span>
-              </div>
-            </div>
-
-            {/* Credential badges */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="p-4 rounded-xl bg-stone-100/90 border border-stone-200">
-                <span className="font-mono text-[11px] text-stone-600 uppercase tracking-wider block">
-                  Master's Degree
-                </span>
-                <span className="text-sm font-bold text-stone-900 block mt-1">
-                  M.Des
-                </span>
-                <span className="text-xs text-stone-600">
-                  National Institute of Design (NID India)
-                </span>
-              </div>
-
-              <div className="p-4 rounded-xl bg-stone-100/90 border border-stone-200">
-                <span className="font-mono text-[11px] text-stone-600 uppercase tracking-wider block">
-                  Bachelor's Degree
-                </span>
-                <span className="text-sm font-bold text-stone-900 block mt-1">
-                  B.Des
-                </span>
-                <span className="text-xs text-stone-600">
-                  National Institute of Fashion Technology (NIFT India)
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* Right: Narrative & Philosophy (7 cols) */}
-          <div className="lg:col-span-7 space-y-8">
-            <div className="border-l-2 border-stone-900 pl-6 space-y-4">
-              <span className="font-mono text-xs uppercase tracking-widest text-stone-600 block">
-                MEET SAHIL • STATEMENT
-              </span>
-              {SAHIL_PROFILE.bioParagraphs.map((para, i) => (
-                <p
-                  key={i}
-                  className="text-base md:text-xl text-stone-800 leading-relaxed font-normal"
-                >
-                  {para}
-                </p>
-              ))}
-            </div>
-
-            {/* Design Focus Triad */}
-            <div className="pt-6 border-t border-stone-200">
-              <span className="font-mono text-xs uppercase tracking-widest text-stone-600 block mb-4">
-                Core Intersections
-              </span>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {SAHIL_PROFILE.pillars.map((pillar) => (
-                  <div
-                    key={pillar.title}
-                    className="p-4 rounded-xl bg-white border border-stone-200/90 shadow-sm"
-                  >
-                    <span className="font-bold text-sm text-stone-900 block mb-1">
-                      {pillar.title}
-                    </span>
-                    <p className="text-xs text-stone-600 leading-relaxed">
-                      {pillar.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* PDF Slide 2 Preview Button */}
-            <div className="pt-2 flex items-center gap-3">
-              <button
-                onClick={() => onOpenSlide('/pdf-pages/page-02.webp', 'Meet Sahil (PDF Original Page 2)', 2)}
-                className="inline-flex items-center gap-2 text-xs font-mono text-stone-700 hover:text-stone-950 underline underline-offset-4"
-              >
-                <span>View original portfolio presentation slide 02</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. SELECTED WORK / PROJECTS OVERVIEW (Section 9) */}
-      <section id="work" className="py-24 px-6 md:px-12 max-w-6xl mx-auto border-b border-stone-200/80">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-          <SectionLabel category="Selected Works" number="01–03" title="Featured Projects" />
-          <span className="font-mono text-xs text-stone-600 uppercase tracking-wider mb-8 md:mb-0">
-            3 In-Depth Case Studies
-          </span>
-        </div>
-
-        {/* Project Cards Grid */}
-        <div className="space-y-16">
-          {PROJECTS_OVERVIEW.map((project, index) => (
-            <article
-              key={project.id}
-              className="group rounded-2xl bg-white border border-stone-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:border-stone-300 transition-all duration-300"
-            >
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
-                {/* Left: Image / Slide (7 cols) */}
-                <div
-                  onClick={() => onSelectProject(project.id)}
-                  className="lg:col-span-7 relative cursor-pointer overflow-hidden bg-stone-100 aspect-[16/9] lg:aspect-auto"
-                >
-                  <img
-                    src={project.coverSlide}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                  />
-                  <div className="absolute top-4 left-4 px-2.5 py-1 rounded-full bg-stone-900/80 text-white font-mono text-[11px] backdrop-blur-sm">
-                    {project.client}
-                  </div>
-                  <div className="absolute bottom-4 right-4 px-2.5 py-1 rounded bg-black/60 text-white font-mono text-[11px] backdrop-blur-sm">
-                    Case Study {project.number}
-                  </div>
-                </div>
-
-                {/* Right: Narrative & Action (5 cols) */}
-                <div className="lg:col-span-5 p-6 md:p-8 flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="font-mono text-xs font-bold text-stone-600 tracking-widest">
-                        0{index + 1} / 03
-                      </span>
-                      <span className="font-mono text-[11px] uppercase tracking-wider text-stone-600">
-                        {project.client}
-                      </span>
-                    </div>
-
-                    <h3 className="text-2xl md:text-3xl font-extrabold text-stone-950 tracking-tight mb-2">
-                      {project.projectName}
-                    </h3>
-                    <h4 className="text-base font-semibold text-stone-700 mb-4">
-                      {project.title}
-                    </h4>
-
-                    <p className="text-stone-600 text-sm leading-relaxed mb-6">
-                      {project.subtitle}
-                    </p>
-
-                    {/* Category pills */}
-                    <div className="flex flex-wrap gap-1.5 mb-8">
-                      {project.categories.map((cat) => (
-                        <span
-                          key={cat}
-                          className="px-2.5 py-1 rounded-md bg-stone-100 text-stone-700 font-mono text-[11px]"
-                        >
-                          {cat}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Explore button */}
-                  <button
-                    onClick={() => onSelectProject(project.id)}
-                    className="inline-flex items-center justify-between w-full px-5 py-3.5 rounded-xl bg-stone-900 text-white font-mono text-xs uppercase tracking-widest group-hover:bg-stone-800 transition-all shadow-md"
-                  >
-                    <span>Read Full Case Study</span>
-                    <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </button>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      {/* 4. DESIGN PHILOSOPHY SECTION */}
-      <section id="philosophy" className="py-24 px-6 md:px-12 max-w-6xl mx-auto border-b border-stone-200/80">
-        <SectionLabel category="Philosophy" number="04" title="Design Approach" />
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-          <div className="p-8 rounded-2xl bg-stone-100/90 border border-stone-200">
-            <span className="font-mono text-xs uppercase tracking-widest text-stone-600 block mb-2">
-              Human-Centered Rigor
-            </span>
-            <h3 className="text-xl md:text-2xl font-bold text-stone-900 mb-4">
-              Grounding technology in contextual human behaviour.
-            </h3>
-            <p className="text-stone-700 text-sm leading-relaxed">
-              Great experiences are not about adding layers of buttons or features. As evidenced in Makaan, Sneaker Care, and Galaxy CMF, design begins with domestic immersions, regional nuance, and understanding what people truly value before structuring interfaces.
-            </p>
-          </div>
-
-          <div className="p-8 rounded-2xl bg-stone-100/90 border border-stone-200">
-            <span className="font-mono text-xs uppercase tracking-widest text-stone-600 block mb-2">
-              From Control to Intent
-            </span>
-            <h3 className="text-xl md:text-2xl font-bold text-stone-900 mb-4">
-              Usable, thoughtful, adaptive and meaningful.
-            </h3>
-            <p className="text-stone-700 text-sm leading-relaxed">
-              Whether orchestrating smart domestic appliances through conversational AI or forecasting multi-sensory CMF palettes for millions of smartphones, the goal remains: reducing cognitive friction, empowering natural expression, and elevating everyday living.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 5. PDF COMPLETE SLIDE PREVIEW GALLERY */}
-      <section className="py-20 px-6 md:px-12 max-w-6xl mx-auto">
-        <div className="flex items-center justify-between mb-8">
+      {/* 2. FEATURED PROJECTS — APPLE KEYNOTE BENTO SHOWCASE */}
+      <section id="projects" className="py-24 px-6 md:px-12 max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 pb-4 border-b border-black/[0.06]">
           <div>
-            <span className="font-mono text-xs uppercase tracking-widest text-stone-600 block">
-              Artifact Archive
+            <span className="font-mono text-xs uppercase tracking-widest text-[#86868B] block mb-1">
+              Selected Work
             </span>
-            <h3 className="text-2xl font-bold text-stone-900">
-              Complete 49-Page Portfolio Deck
-            </h3>
+            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[#1D1D1F]">
+              Featured Case Studies
+            </h2>
           </div>
-          <span className="font-mono text-xs text-stone-600">
-            Source of Truth
+          <span className="font-mono text-xs text-[#86868B]">
+            3 In-Depth Research &amp; Experience Projects
           </span>
         </div>
 
-        <p className="text-stone-600 text-sm mb-8 max-w-2xl">
-          Click any slide to open the high-resolution lightbox with zoom and full navigation.
-        </p>
+        {/* Apple-style Bento Cards Grid */}
+        <div className="space-y-12">
+          {/* Card 01: Project Makaan */}
+          <div
+            onClick={() => onSelectProject('makaan')}
+            className="group relative cursor-pointer rounded-3xl apple-glass p-8 md:p-12 border border-white/80 hover:border-black/10 transition-all duration-300 hover:shadow-2xl overflow-hidden"
+          >
+            {/* Ambient project accent glow */}
+            <div className="absolute top-0 right-0 w-[450px] h-[350px] bg-gradient-to-bl from-rose-100/50 via-amber-50/20 to-transparent blur-3xl pointer-events-none -z-10" />
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
-          {[1, 2, 3, 5, 7, 10, 13, 16, 18, 21, 23, 26, 28, 30, 31, 36, 42, 48].map((pageNum) => (
-            <div
-              key={pageNum}
-              onClick={() => onOpenSlide(`/pdf-pages/page-${String(pageNum).padStart(2, '0')}.webp`, `Portfolio Page ${pageNum}`, pageNum)}
-              className="cursor-pointer group relative rounded-lg overflow-hidden border border-stone-200 aspect-[16/9] bg-stone-100 hover:border-stone-400 shadow-sm"
-            >
-              <img
-                src={`/pdf-pages/page-${String(pageNum).padStart(2, '0')}.webp`}
-                alt={`Slide ${pageNum}`}
-                loading="lazy"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-[10px] font-mono">
-                Page {pageNum}
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+              <div className="space-y-4 max-w-2xl">
+                <div className="flex items-center gap-3">
+                  <span className="px-3 py-1 rounded-full bg-rose-50 text-[#8C253B] font-mono text-xs font-semibold border border-rose-100">
+                    Project 01 • Samsung ICXT
+                  </span>
+                  <span className="font-mono text-xs text-[#86868B]">
+                    #HarGharKuchKehtaHai
+                  </span>
+                </div>
+
+                <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight text-[#1D1D1F] group-hover:text-[#8C253B] transition-colors">
+                  Project Makaan
+                </h3>
+
+                <h4 className="text-lg md:text-xl font-medium text-[#515154]">
+                  Future of Connected Living — Reimagining connected homes through conversational AI
+                </h4>
+
+                <p className="text-sm text-[#86868B] leading-relaxed max-w-xl">
+                  Comprehensive domestic immersion across 5 Indian cities (Delhi, Guwahati, Hyderabad, Indore, Mumbai) investigating the transition from controlling appliances to expressing natural human intent.
+                </p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 pt-2">
+                  <span className="px-3 py-1 rounded-full bg-black/[0.03] border border-black/[0.06] text-xs font-mono text-[#515154]">
+                    AI Interaction Design
+                  </span>
+                  <span className="px-3 py-1 rounded-full bg-black/[0.03] border border-black/[0.06] text-xs font-mono text-[#515154]">
+                    SmartThings Intelligence
+                  </span>
+                  <span className="px-3 py-1 rounded-full bg-black/[0.03] border border-black/[0.06] text-xs font-mono text-[#515154]">
+                    5 Immersion Zones
+                  </span>
+                </div>
+              </div>
+
+              {/* Action pill */}
+              <div className="flex items-center justify-end">
+                <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#1D1D1F] group-hover:bg-[#8C253B] text-white font-medium text-xs font-mono tracking-wider uppercase transition-all shadow-md">
+                  <span>View Case Study</span>
+                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </div>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* Card 02: Sneaker Care */}
+          <div
+            onClick={() => onSelectProject('sneaker-care')}
+            className="group relative cursor-pointer rounded-3xl apple-glass p-8 md:p-12 border border-white/80 hover:border-black/10 transition-all duration-300 hover:shadow-2xl overflow-hidden"
+          >
+            {/* Ambient project accent glow */}
+            <div className="absolute top-0 right-0 w-[450px] h-[350px] bg-gradient-to-bl from-emerald-100/50 via-teal-50/20 to-transparent blur-3xl pointer-events-none -z-10" />
+
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+              <div className="space-y-4 max-w-2xl">
+                <div className="flex items-center gap-3">
+                  <span className="px-3 py-1 rounded-full bg-emerald-50 text-[#385A2E] font-mono text-xs font-semibold border border-emerald-100">
+                    Project 02 • Connected Experience
+                  </span>
+                  <span className="font-mono text-xs text-[#86868B]">
+                    $4.5 Bn Market by 2030
+                  </span>
+                </div>
+
+                <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight text-[#1D1D1F] group-hover:text-[#385A2E] transition-colors">
+                  Sneaker Care
+                </h3>
+
+                <h4 className="text-lg md:text-xl font-medium text-[#515154]">
+                  Specialized Care Experience — Bridging Indian Gen-Z sneakerhead culture with material-aware wash cycles
+                </h4>
+
+                <p className="text-sm text-[#86868B] leading-relaxed max-w-xl">
+                  Addressing the gap between high-value sneaker culture and damaging wash methods through downloadable material-aware cycles for Mesh, Canvas, Leather, Suede, and Synthetics.
+                </p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 pt-2">
+                  <span className="px-3 py-1 rounded-full bg-black/[0.03] border border-black/[0.06] text-xs font-mono text-[#515154]">
+                    Service Design
+                  </span>
+                  <span className="px-3 py-1 rounded-full bg-black/[0.03] border border-black/[0.06] text-xs font-mono text-[#515154]">
+                    Product Feature Innovation
+                  </span>
+                  <span className="px-3 py-1 rounded-full bg-black/[0.03] border border-black/[0.06] text-xs font-mono text-[#515154]">
+                    5.87% CAGR
+                  </span>
+                </div>
+              </div>
+
+              {/* Action pill */}
+              <div className="flex items-center justify-end">
+                <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#1D1D1F] group-hover:bg-[#385A2E] text-white font-medium text-xs font-mono tracking-wider uppercase transition-all shadow-md">
+                  <span>View Case Study</span>
+                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 03: Galaxy CMF Design */}
+          <div
+            onClick={() => onSelectProject('galaxy-cmf')}
+            className="group relative cursor-pointer rounded-3xl apple-glass p-8 md:p-12 border border-white/80 hover:border-black/10 transition-all duration-300 hover:shadow-2xl overflow-hidden"
+          >
+            {/* Ambient project accent glow */}
+            <div className="absolute top-0 right-0 w-[450px] h-[350px] bg-gradient-to-bl from-purple-100/50 via-indigo-50/20 to-transparent blur-3xl pointer-events-none -z-10" />
+
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+              <div className="space-y-4 max-w-2xl">
+                <div className="flex items-center gap-3">
+                  <span className="px-3 py-1 rounded-full bg-purple-50 text-[#5A2A78] font-mono text-xs font-semibold border border-purple-100">
+                    Project 03 • Trend Forecasting
+                  </span>
+                  <span className="font-mono text-xs text-[#86868B]">
+                    Galaxy A, M &amp; F Series
+                  </span>
+                </div>
+
+                <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight text-[#1D1D1F] group-hover:text-[#5A2A78] transition-colors">
+                  2026 CMF Design
+                </h3>
+
+                <h4 className="text-lg md:text-xl font-medium text-[#515154]">
+                  Trends Forecast for Galaxy — Emerging color narratives rooted in consumer sentiment
+                </h4>
+
+                <p className="text-sm text-[#86868B] leading-relaxed max-w-xl">
+                  Deep dive into lifestyle immersions, global consumer drivers ("Gently Pleasant"), South West Asia regional drivers ("Uplifted Brilliance"), linear and wave pattern studies, and the 2026 Master Pantone Matrix.
+                </p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 pt-2">
+                  <span className="px-3 py-1 rounded-full bg-black/[0.03] border border-black/[0.06] text-xs font-mono text-[#515154]">
+                    CMF Strategy
+                  </span>
+                  <span className="px-3 py-1 rounded-full bg-black/[0.03] border border-black/[0.06] text-xs font-mono text-[#515154]">
+                    Pantone Color Proposals
+                  </span>
+                  <span className="px-3 py-1 rounded-full bg-black/[0.03] border border-black/[0.06] text-xs font-mono text-[#515154]">
+                    Material Innovation
+                  </span>
+                </div>
+              </div>
+
+              {/* Action pill */}
+              <div className="flex items-center justify-end">
+                <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#1D1D1F] group-hover:bg-[#5A2A78] text-white font-medium text-xs font-mono tracking-wider uppercase transition-all shadow-md">
+                  <span>View Case Study</span>
+                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. ABOUT / MEET SAHIL — APPLE EXECUTIVE BENTO (NO PHOTO) */}
+      <section id="about" className="py-24 px-6 md:px-12 max-w-6xl mx-auto border-t border-black/[0.06]">
+        <div className="mb-12">
+          <span className="font-mono text-xs uppercase tracking-widest text-[#86868B] block mb-1">
+            Design Leadership
+          </span>
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[#1D1D1F]">
+            Meet Sahil
+          </h2>
+        </div>
+
+        {/* Bento Grid layout */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+          {/* Main Statement Card (7 cols) */}
+          <div className="md:col-span-7 apple-glass p-8 md:p-10 rounded-3xl flex flex-col justify-between space-y-6">
+            <div className="space-y-4">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#86868B]">
+                Philosophy &amp; Narrative
+              </span>
+              <p className="text-lg md:text-xl text-[#1D1D1F] leading-relaxed font-normal">
+                {SAHIL_PROFILE.bioParagraphs[0]}
+              </p>
+              <p className="text-sm md:text-base text-[#515154] leading-relaxed font-light">
+                {SAHIL_PROFILE.bioParagraphs[1]}
+              </p>
+            </div>
+
+            <div className="pt-6 border-t border-black/[0.06] flex items-center justify-between text-xs font-mono text-[#86868B]">
+              <span>Sahil Husain</span>
+              <span>New Delhi, India</span>
+            </div>
+          </div>
+
+          {/* Right Column: Credentials & Academic Foundation (5 cols) */}
+          <div className="md:col-span-5 flex flex-col gap-6">
+            <div className="apple-glass p-8 rounded-3xl flex-1 flex flex-col justify-between">
+              <div>
+                <span className="font-mono text-xs uppercase tracking-widest text-[#86868B] block mb-3">
+                  Design Education
+                </span>
+                <div className="space-y-4">
+                  <div className="p-4 rounded-2xl bg-white/80 border border-black/[0.06] shadow-sm">
+                    <span className="font-mono text-[11px] text-[#86868B] uppercase tracking-wider block">
+                      Postgraduate
+                    </span>
+                    <span className="text-base font-bold text-[#1D1D1F] block mt-0.5">
+                      M.Des — NID India
+                    </span>
+                    <span className="text-xs text-[#515154]">
+                      National Institute of Design
+                    </span>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-white/80 border border-black/[0.06] shadow-sm">
+                    <span className="font-mono text-[11px] text-[#86868B] uppercase tracking-wider block">
+                      Undergraduate
+                    </span>
+                    <span className="text-base font-bold text-[#1D1D1F] block mt-0.5">
+                      B.Des — NIFT India
+                    </span>
+                    <span className="text-xs text-[#515154]">
+                      National Institute of Fashion Technology
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-4 pt-4 border-t border-black/[0.06] font-mono text-xs text-[#86868B]">
+                Rigorous Form &amp; User Research Foundation
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 3 Core Intersection Pillars */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          <div className="apple-glass p-6 rounded-3xl">
+            <div className="w-10 h-10 rounded-2xl bg-black/[0.04] border border-black/[0.06] flex items-center justify-center mb-4">
+              <Cpu className="w-5 h-5 text-[#1D1D1F]" />
+            </div>
+            <h4 className="text-base font-bold text-[#1D1D1F] mb-1">
+              Technology
+            </h4>
+            <p className="text-xs text-[#515154] leading-relaxed">
+              Understanding systemic capabilities, connected ecosystems, and conversational intelligent layers like Makaan.
+            </p>
+          </div>
+
+          <div className="apple-glass p-6 rounded-3xl">
+            <div className="w-10 h-10 rounded-2xl bg-black/[0.04] border border-black/[0.06] flex items-center justify-center mb-4">
+              <Users className="w-5 h-5 text-[#1D1D1F]" />
+            </div>
+            <h4 className="text-base font-bold text-[#1D1D1F] mb-1">
+              People
+            </h4>
+            <p className="text-xs text-[#515154] leading-relaxed">
+              In-depth multi-regional home immersions, authentic user verbatims, and cultural understanding across cohorts.
+            </p>
+          </div>
+
+          <div className="apple-glass p-6 rounded-3xl">
+            <div className="w-10 h-10 rounded-2xl bg-black/[0.04] border border-black/[0.06] flex items-center justify-center mb-4">
+              <Sparkles className="w-5 h-5 text-[#1D1D1F]" />
+            </div>
+            <h4 className="text-base font-bold text-[#1D1D1F] mb-1">
+              Everyday Experiences
+            </h4>
+            <p className="text-xs text-[#515154] leading-relaxed">
+              Crafting usable, thoughtful, adaptive, and meaningful experiences that simplify life and reduce friction.
+            </p>
+          </div>
         </div>
       </section>
     </div>
