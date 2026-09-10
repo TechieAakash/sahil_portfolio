@@ -10,16 +10,28 @@ interface HomeProps {
 export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
   return (
     <div className="min-h-screen text-[#1D1D1F]">
-      {/* 1. EDITORIAL HERO SECTION (DIRECTLY ON SUBTLE SANDY TEXTURE) */}
+      {/* 1. EDITORIAL HERO SECTION */}
       <section className="relative pt-36 md:pt-44 pb-20 md:pb-28 px-6 md:px-12 max-w-6xl mx-auto text-center overflow-hidden">
+        {/* Exact Arizona Poppy Embossed Botanical Design in the Background of the Texts */}
+        <div
+          className="absolute top-[48%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[460px] md:w-[560px] pointer-events-none select-none -z-10 opacity-85 mix-blend-multiply transition-opacity duration-500"
+          aria-hidden="true"
+        >
+          <img
+            src="/textures/poppy_hero_2x.webp"
+            alt="Embossed Arizona Poppy Botanical Relief"
+            className="w-full h-auto object-contain mx-auto"
+          />
+        </div>
+
         {/* Subtle Sandy Pill Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full sandy-pill text-xs font-mono tracking-wider uppercase mb-8">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full sandy-pill text-xs font-mono tracking-wider uppercase mb-8 shadow-sm">
           <span className="w-1.5 h-1.5 rounded-full bg-[#8C253B]" />
           <span>Product Experience &amp; Interaction Design</span>
         </div>
 
-        {/* Hero Typography — Directly on Subtle Sandy Background without glassmorphism */}
-        <div className="space-y-5 max-w-3xl mx-auto mb-10">
+        {/* Hero Typography — Directly over the Embossed Botanical Artwork */}
+        <div className="space-y-5 max-w-3xl mx-auto mb-10 relative z-10">
           <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight text-[#1D1D1F] leading-[1.02]">
             Sahil Husain
           </h1>
