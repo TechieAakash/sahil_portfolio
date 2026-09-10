@@ -15,20 +15,44 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
         {/* Subtle Ambient Radial Light (Apple Keynote Style) */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] md:w-[900px] h-[400px] bg-gradient-to-b from-amber-100/40 via-purple-50/30 to-transparent blur-3xl pointer-events-none -z-10" />
 
-        {/* Apple-style Frosted Pill Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full apple-glass-pill text-[#515154] text-xs font-mono tracking-wider uppercase mb-8 shadow-sm">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-          <span>Product Experience &amp; Interaction Design</span>
-        </div>
+        {/* Apple-grade Glassmorphic Color Container for Hero Text */}
+        <div className="relative max-w-4xl mx-auto rounded-3xl p-8 sm:p-12 md:p-16 border border-white/80 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.07)] backdrop-blur-2xl bg-white/60 overflow-hidden mb-10">
+          {/* Vibrant Ambient Gradient Glow Elements behind the glass */}
+          <div className="absolute -top-24 -left-20 w-72 h-72 bg-gradient-to-br from-indigo-300/40 via-purple-300/40 to-pink-300/30 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -right-20 w-80 h-80 bg-gradient-to-tl from-amber-300/35 via-rose-300/30 to-sky-300/35 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-48 bg-gradient-to-r from-blue-200/25 via-teal-200/20 to-purple-200/25 rounded-full blur-2xl pointer-events-none" />
 
-        {/* Apple-style Large Typography */}
-        <div className="space-y-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight text-[#1D1D1F] leading-[1.02]">
-            Sahil Husain
-          </h1>
-          <p className="text-xl sm:text-2xl md:text-3xl font-light text-[#515154] tracking-tight max-w-3xl mx-auto leading-relaxed">
-            Designing intelligent systems at the intersection of <span className="text-black font-normal">technology</span>, <span className="text-black font-normal">people</span>, and <span className="text-black font-normal">everyday experiences</span>.
-          </p>
+          <div className="relative z-10 space-y-6">
+            {/* Apple-style Frosted Pill Badge with Color Glow */}
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 backdrop-blur-md border border-white/90 text-[#3C3C43] text-xs font-mono tracking-wider uppercase shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-pulse shadow-sm" />
+              <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600">
+                Product Experience &amp; Interaction Design
+              </span>
+            </div>
+
+            {/* Apple-style Large Typography */}
+            <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight text-[#1D1D1F] leading-[1.02]">
+              Sahil Husain
+            </h1>
+
+            {/* Subtitle with elegant keyword color highlights */}
+            <p className="text-xl sm:text-2xl md:text-3xl font-light text-[#515154] tracking-tight max-w-2xl mx-auto leading-relaxed">
+              Designing intelligent systems at the intersection of{' '}
+              <span className="font-medium text-[#1D1D1F] underline decoration-indigo-400 decoration-2 underline-offset-4">
+                technology
+              </span>
+              ,{' '}
+              <span className="font-medium text-[#1D1D1F] underline decoration-purple-400 decoration-2 underline-offset-4">
+                people
+              </span>
+              , and{' '}
+              <span className="font-medium text-[#1D1D1F] underline decoration-rose-400 decoration-2 underline-offset-4">
+                everyday experiences
+              </span>
+              .
+            </p>
+          </div>
         </div>
 
         {/* Apple-style Action Buttons */}
