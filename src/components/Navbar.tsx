@@ -36,16 +36,13 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        {/* Left: Apple-style Minimal Name */}
+        {/* Left: Apple-style Minimal Portfolio Branding */}
         <button
           onClick={() => handleNavClick('home')}
           className="group flex items-center gap-2 focus:outline-none"
         >
           <span className="font-bold text-sm md:text-base tracking-tight text-[#1D1D1F] group-hover:text-black transition-colors">
-            Sahil Husain
-          </span>
-          <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-[#EAE4D9] border border-[#DDD5C7] text-[10px] font-mono text-[#736E65] tracking-wider uppercase">
-            Design
+            Portfolio
           </span>
         </button>
 
