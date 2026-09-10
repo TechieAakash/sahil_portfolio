@@ -31,8 +31,8 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/75 backdrop-blur-2xl border-b border-black/[0.06] py-3 shadow-[0_4px_20px_rgba(0,0,0,0.03)]'
-          : 'bg-[#FAF9F6]/80 backdrop-blur-xl py-4 border-b border-transparent'
+          ? 'bg-[#F7F4EE]/92 backdrop-blur-md border-b border-[#E5DFD5] py-3 shadow-[0_2px_15px_rgba(50,40,30,0.03)]'
+          : 'bg-transparent py-4 border-b border-transparent'
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -44,18 +44,18 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
           <span className="font-bold text-sm md:text-base tracking-tight text-[#1D1D1F] group-hover:text-black transition-colors">
             Sahil Husain
           </span>
-          <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-black/[0.04] border border-black/[0.06] text-[10px] font-mono text-[#86868B] tracking-wider uppercase">
+          <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-[#EAE4D9] border border-[#DDD5C7] text-[10px] font-mono text-[#736E65] tracking-wider uppercase">
             Design
           </span>
         </button>
 
-        {/* Center/Right: Apple-style Translucent Navigation */}
-        <nav className="hidden md:flex items-center gap-1 bg-black/[0.03] p-1 rounded-full border border-black/[0.05] text-xs font-medium text-[#515154]">
+        {/* Center/Right: Apple-style Sandy Navigation */}
+        <nav className="hidden md:flex items-center gap-1 bg-[#ECE6DC] p-1 rounded-full border border-[#DFD8CC] text-xs font-medium text-[#555047]">
           <button
             onClick={() => handleNavClick('home')}
             className={`px-3.5 py-1.5 rounded-full transition-all duration-200 ${
               currentView === 'home'
-                ? 'bg-white text-black font-semibold shadow-sm border border-black/[0.06]'
+                ? 'bg-white text-black font-semibold shadow-sm border border-[#DDD5C7]'
                 : 'hover:text-black hover:bg-white/60'
             }`}
           >
