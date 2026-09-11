@@ -5,7 +5,6 @@ interface PdfPageImageProps {
   src: string;
   alt: string;
   pageNumber?: number;
-  caption?: string;
   className?: string;
   onClick?: () => void;
   priority?: boolean;
@@ -15,7 +14,6 @@ export const PdfPageImage: React.FC<PdfPageImageProps> = ({
   src,
   alt,
   pageNumber,
-  caption,
   className = '',
   onClick,
   priority = false,
@@ -76,13 +74,6 @@ export const PdfPageImage: React.FC<PdfPageImageProps> = ({
           )}
         </div>
       </div>
-
-      {caption && (
-        <figcaption className="mt-2.5 text-xs text-stone-500 font-mono tracking-tight flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-stone-400" />
-          {caption}
-        </figcaption>
-      )}
     </figure>
   );
 };

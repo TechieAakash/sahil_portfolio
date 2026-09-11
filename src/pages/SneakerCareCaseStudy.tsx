@@ -68,7 +68,6 @@ export const SneakerCareCaseStudy: React.FC<SneakerCareCaseStudyProps> = ({
             src="/pdf-pages/page-17.webp"
             alt="Specialized Care Experience Cover Slide 17"
             pageNumber={17}
-            caption="Presentation Title Slide — Service design | Product feature innovation | Connected product experience"
             onClick={() => onOpenSlide('/pdf-pages/page-17.webp', 'Specialized Care Experience Title', 17)}
             priority
           />
@@ -76,7 +75,6 @@ export const SneakerCareCaseStudy: React.FC<SneakerCareCaseStudyProps> = ({
             src="/pdf-pages/page-18.webp"
             alt="Sneaker Care Context Slide 18"
             pageNumber={18}
-            caption="Context Slide 18 — Rising Sneaker-Head culture in India"
             onClick={() => onOpenSlide('/pdf-pages/page-18.webp', 'Sneaker Care Culture Context', 18)}
             priority
           />
@@ -227,7 +225,6 @@ export const SneakerCareCaseStudy: React.FC<SneakerCareCaseStudyProps> = ({
               src="/pdf-pages/page-19.webp"
               alt="Emerging Sneaker Culture & Startups Slide 19"
               pageNumber={19}
-              caption="Slide 19 — Growing sneakers market, cultural shift, and local startup ecosystems"
               onClick={() => onOpenSlide('/pdf-pages/page-19.webp', 'Emerging Sneaker Culture', 19)}
             />
           </div>
@@ -327,7 +324,6 @@ export const SneakerCareCaseStudy: React.FC<SneakerCareCaseStudyProps> = ({
           src="/pdf-pages/page-20.webp"
           alt="Sneaker Washing Challenges Slide 20"
           pageNumber={20}
-          caption="Slide 20 — Breakdown of washing challenges at home vs specialized services"
           onClick={() => onOpenSlide('/pdf-pages/page-20.webp', 'Sneaker Washing Challenges', 20)}
         />
       </section>
@@ -375,7 +371,6 @@ export const SneakerCareCaseStudy: React.FC<SneakerCareCaseStudyProps> = ({
           src="/pdf-pages/page-21.webp"
           alt="New Cycle Proposal Slide 21"
           pageNumber={21}
-          caption="Slide 21 — Five-stage specialized sneaker care feature proposal"
           onClick={() => onOpenSlide('/pdf-pages/page-21.webp', 'Cycle Proposal', 21)}
         />
       </section>
@@ -408,7 +403,6 @@ export const SneakerCareCaseStudy: React.FC<SneakerCareCaseStudyProps> = ({
             src="/pdf-pages/page-22.webp"
             alt="Low Fidelity Wireframes Slide 22"
             pageNumber={22}
-            caption="Slide 22 — Low fidelity interface architecture for specialized sneaker care"
             onClick={() => onOpenSlide('/pdf-pages/page-22.webp', 'Sneaker Care Wireframes', 22)}
           />
         </div>
@@ -419,7 +413,6 @@ export const SneakerCareCaseStudy: React.FC<SneakerCareCaseStudyProps> = ({
             src="/pdf-pages/page-23.webp"
             alt="High Fidelity Sneaker Care Screens Slide 23"
             pageNumber={23}
-            caption="Slide 23 — High fidelity UI: Simplifying care for what users value"
             onClick={() => onOpenSlide('/pdf-pages/page-23.webp', 'High Fidelity Sneaker Care UI', 23)}
           />
         </div>

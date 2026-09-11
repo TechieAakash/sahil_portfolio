@@ -65,7 +65,6 @@ export const GalaxyCmfCaseStudy: React.FC<GalaxyCmfCaseStudyProps> = ({
             src="/pdf-pages/page-24.webp"
             alt="Trends Forecast for Galaxy Title Slide 24"
             pageNumber={24}
-            caption="Presentation Title Slide — Trends forecast for Galaxy A, M & F series"
             onClick={() => onOpenSlide('/pdf-pages/page-24.webp', 'Galaxy CMF Forecast Title', 24)}
             priority
           />
@@ -73,7 +72,6 @@ export const GalaxyCmfCaseStudy: React.FC<GalaxyCmfCaseStudyProps> = ({
             src="/pdf-pages/page-25.webp"
             alt="2026 CMF design for Galaxy A series Slide 25"
             pageNumber={25}
-            caption="Chapter Opening Slide 25 — 2026 CMF design for Galaxy A series"
             onClick={() => onOpenSlide('/pdf-pages/page-25.webp', 'Galaxy A Series Chapter', 25)}
             priority
           />
@@ -154,7 +152,6 @@ export const GalaxyCmfCaseStudy: React.FC<GalaxyCmfCaseStudyProps> = ({
           src="/pdf-pages/page-26.webp"
           alt="Smartphone Market Scenario Slide 26"
           pageNumber={26}
-          caption="Slide 26 — Average SKUs per price segment and CMF divergence"
           onClick={() => onOpenSlide('/pdf-pages/page-26.webp', 'Smartphone Market Scenario', 26)}
         />
       </section>
@@ -223,7 +220,6 @@ export const GalaxyCmfCaseStudy: React.FC<GalaxyCmfCaseStudyProps> = ({
           src="/pdf-pages/page-27.webp"
           alt="Consumer Segments Slide 27"
           pageNumber={27}
-          caption="Slide 27 — Quiet Statement Seeker vs Trend Setter visual moodboards"
           onClick={() => onOpenSlide('/pdf-pages/page-27.webp', 'Consumer Segments', 27)}
         />
       </section>
@@ -279,14 +275,12 @@ export const GalaxyCmfCaseStudy: React.FC<GalaxyCmfCaseStudyProps> = ({
             src="/pdf-pages/page-28.webp"
             alt="Consumer Sentiment 2026 Slide 28"
             pageNumber={28}
-            caption="Slide 28 — Visual stimulation that pulses, breathes and evokes emotion"
             onClick={() => onOpenSlide('/pdf-pages/page-28.webp', 'Consumer Sentiment 2026', 28)}
           />
           <PdfPageImage
             src="/pdf-pages/page-29.webp"
             alt="Global Consumer Drivers Slide 29"
             pageNumber={29}
-            caption="Slide 29 — Exploring joy through comfort (Fenty, Ugg, Owala, Our Place)"
             onClick={() => onOpenSlide('/pdf-pages/page-29.webp', 'Global Consumer Drivers', 29)}
           />
         </div>
@@ -336,21 +330,18 @@ export const GalaxyCmfCaseStudy: React.FC<GalaxyCmfCaseStudyProps> = ({
             src="/pdf-pages/page-30.webp"
             alt="CMF Concept Gently Pleasant Slide 30"
             pageNumber={30}
-            caption="Slide 30 — Gently Pleasant sphere visual concept"
             onClick={() => onOpenSlide('/pdf-pages/page-30.webp', 'Gently Pleasant Concept', 30)}
           />
           <PdfPageImage
             src="/pdf-pages/page-31.webp"
             alt="A Series Color Proposals Slide 31"
             pageNumber={31}
-            caption="Slide 31 — A57 Gentle Glaze, A37 Pleasant Gleam, A27 Bright Spark"
             onClick={() => onOpenSlide('/pdf-pages/page-31.webp', 'A Series 3 Proposals', 31)}
           />
           <PdfPageImage
             src="/pdf-pages/page-36.webp"
             alt="Galaxy A Series Color Matrix Slide 36"
             pageNumber={36}
-            caption="Slide 36 — Master Color Proposal Matrix (NDA explicitly preserved)"
             onClick={() => onOpenSlide('/pdf-pages/page-36.webp', 'Galaxy A Series Master Matrix', 36)}
           />
         </div>
@@ -361,28 +352,24 @@ export const GalaxyCmfCaseStudy: React.FC<GalaxyCmfCaseStudyProps> = ({
             src="/pdf-pages/page-32.webp"
             alt="Dark Core Classic Darks Slide 32"
             pageNumber={32}
-            caption="Slide 32 — Dark Core: Classic Navy"
             onClick={() => onOpenSlide('/pdf-pages/page-32.webp', 'Dark Core', 32)}
           />
           <PdfPageImage
             src="/pdf-pages/page-33.webp"
             alt="Light Neutral Silverine Greys Slide 33"
             pageNumber={33}
-            caption="Slide 33 — Light Neutral: Silverine Greys"
             onClick={() => onOpenSlide('/pdf-pages/page-33.webp', 'Light Neutral', 33)}
           />
           <PdfPageImage
             src="/pdf-pages/page-34.webp"
             alt="Trend A Cool Renew Blues Slide 34"
             pageNumber={34}
-            caption="Slide 34 — Trend A: Renew Blues"
             onClick={() => onOpenSlide('/pdf-pages/page-34.webp', 'Trend A Cool', 34)}
           />
           <PdfPageImage
             src="/pdf-pages/page-35.webp"
             alt="Trend B Warm Radiant Warms Slide 35"
             pageNumber={35}
-            caption="Slide 35 — Trend B: Radiant Warms"
             onClick={() => onOpenSlide('/pdf-pages/page-35.webp', 'Trend B Warm', 35)}
           />
         </div>
@@ -438,14 +425,12 @@ export const GalaxyCmfCaseStudy: React.FC<GalaxyCmfCaseStudyProps> = ({
             src="/pdf-pages/page-43.webp"
             alt="Galaxy M Series Linear Patterns Slide 43"
             pageNumber={43}
-            caption="Slide 43 — Linear patterns reflecting clarity of light and lively luxe color"
             onClick={() => onOpenSlide('/pdf-pages/page-43.webp', 'M Series Linear Patterns', 43)}
           />
           <PdfPageImage
             src="/pdf-pages/page-46.webp"
             alt="Galaxy F Series Wave Patterns Slide 46"
             pageNumber={46}
-            caption="Slide 46 — A rhythm of waves and a burst of glistening rich hues"
             onClick={() => onOpenSlide('/pdf-pages/page-46.webp', 'F Series Wave Patterns', 46)}
           />
         </div>
@@ -455,14 +440,12 @@ export const GalaxyCmfCaseStudy: React.FC<GalaxyCmfCaseStudyProps> = ({
             src="/pdf-pages/page-44.webp"
             alt="Galaxy M Series Moodboard Slide 44"
             pageNumber={44}
-            caption="Slide 44 — Galaxy M Series Moodboard & Key Tones (Lively Luxe)"
             onClick={() => onOpenSlide('/pdf-pages/page-44.webp', 'M Series Moodboard', 44)}
           />
           <PdfPageImage
             src="/pdf-pages/page-47.webp"
             alt="Galaxy F Series Moodboard Slide 47"
             pageNumber={47}
-            caption="Slide 47 — Galaxy F Series Moodboard & Dynamic Tones (Radiant Flair)"
             onClick={() => onOpenSlide('/pdf-pages/page-47.webp', 'F Series Moodboard', 47)}
           />
         </div>
@@ -479,7 +462,6 @@ export const GalaxyCmfCaseStudy: React.FC<GalaxyCmfCaseStudyProps> = ({
             src="/pdf-pages/page-48.webp"
             alt="2026 Galaxy M / F Color Candidates Matrix Slide 48"
             pageNumber={48}
-            caption="Slide 48 — Master Candidates Matrix: M5X, M3X, M0X & F5X, F3X, F0X"
             onClick={() => onOpenSlide('/pdf-pages/page-48.webp', 'Final Color Candidates Matrix', 48)}
           />
         </div>

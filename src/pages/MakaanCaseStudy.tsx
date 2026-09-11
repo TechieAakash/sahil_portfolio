@@ -66,7 +66,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
             src="/pdf-pages/page-04.webp"
             alt="Future of Connected Living Title Slide"
             pageNumber={4}
-            caption="Presentation Title Slide — Experience design | Product experience innovation | AI interaction design"
             onClick={() => onOpenSlide('/pdf-pages/page-04.webp', 'Project Makaan Title', 4)}
             priority
           />
@@ -74,7 +73,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
             src="/pdf-pages/page-05.webp"
             alt="Project Makaan Vision"
             pageNumber={5}
-            caption="Core Vision Slide — What if your home understood what you need before you navigate through interfaces?"
             onClick={() => onOpenSlide('/pdf-pages/page-05.webp', 'Project Makaan Core Vision', 5)}
             priority
           />
@@ -126,7 +124,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
               src="/pdf-pages/page-06.webp"
               alt="Home as an Intelligent Companion Architecture"
               pageNumber={6}
-              caption="Original Slide 06 — Responsive environment architecture diagram"
               onClick={() => onOpenSlide('/pdf-pages/page-06.webp', 'Context Diagram', 6)}
             />
           </div>
@@ -176,7 +173,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
               src="/pdf-pages/page-07.webp"
               alt="India Research Immersion Map and Housing Typologies"
               pageNumber={7}
-              caption="Slide 07 — 5 Immersion Zones (Delhi, Guwahati, Hyderabad, Indore, Mumbai) and housing typologies"
               onClick={() => onOpenSlide('/pdf-pages/page-07.webp', 'Research Immersion Map', 7)}
             />
           </div>
@@ -269,7 +265,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
               src="/pdf-pages/page-08.webp"
               alt="Research Guide and Photo Elicitation Field Photos"
               pageNumber={8}
-              caption="Slide 08 — Photo elicitation & home immersion documentary in Indian households"
               onClick={() => onOpenSlide('/pdf-pages/page-08.webp', 'Field Photo Elicitation', 8)}
             />
           </div>
@@ -313,7 +308,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
               src="/pdf-pages/page-09.webp"
               alt="Affinity Mapping concentric circle diagram"
               pageNumber={9}
-              caption="Slide 09 — Pain point hierarchy & user verbatim mapping"
               onClick={() => onOpenSlide('/pdf-pages/page-09.webp', 'Pain Point Hierarchy', 9)}
             />
           </div>
@@ -405,7 +399,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
           src="/pdf-pages/page-10.webp"
           alt="User Journey Slide 10"
           pageNumber={10}
-          caption="Slide 10 — Step-by-step user journey showing appliance management friction"
           onClick={() => onOpenSlide('/pdf-pages/page-10.webp', 'User Journey Friction', 10)}
         />
       </section>
@@ -436,7 +429,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
               src="/pdf-pages/page-11.webp"
               alt="Core Insight Slide 11"
               pageNumber={11}
-              caption="Slide 11 — Core insight on human needs vs application toggles"
               onClick={() => onOpenSlide('/pdf-pages/page-11.webp', 'Core Insight', 11)}
             />
           </div>
@@ -507,7 +499,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
           src="/pdf-pages/page-13.webp"
           alt="Introducing Makaan 4 Pillars Architecture"
           pageNumber={13}
-          caption="Slide 13 — Four core intelligence pillars of Makaan"
           onClick={() => onOpenSlide('/pdf-pages/page-13.webp', 'Introducing Makaan Pillars', 13)}
         />
       </section>
@@ -551,7 +542,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
           src="/pdf-pages/page-14.webp"
           alt="Experience Flow 6 Steps Slide 14"
           pageNumber={14}
-          caption="Slide 14 — Six-step experience flow with continuous learning feedback loop"
           onClick={() => onOpenSlide('/pdf-pages/page-14.webp', 'Experience Flow', 14)}
         />
       </section>
@@ -584,7 +574,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
             src="/pdf-pages/page-15.webp"
             alt="Low Fidelity Wireframes Slide 15"
             pageNumber={15}
-            caption="Slide 15 — Low fidelity wireframe hierarchy and screen architecture"
             onClick={() => onOpenSlide('/pdf-pages/page-15.webp', 'Low Fidelity Wireframes', 15)}
           />
         </div>
@@ -595,7 +584,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
             src="/pdf-pages/page-16.webp"
             alt="High Fidelity UI Screens in SmartThings Slide 16"
             pageNumber={16}
-            caption="Slide 16 — High fidelity conversational layer integration within Samsung SmartThings"
             onClick={() => onOpenSlide('/pdf-pages/page-16.webp', 'High Fidelity SmartThings UI', 16)}
           />
         </div>
