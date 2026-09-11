@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Sparkles } from 'lucide-react';
+import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import { PROJECTS_OVERVIEW } from '../data/portfolioData';
 
 interface NavbarProps {
@@ -8,56 +8,16 @@ interface NavbarProps {
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
-  const [scrolled, setScrolled] = useState(false);
-  const [hidden, setHidden] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [projectsDropdownOpen, setProjectsDropdownOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      setScrolled(currentScrollY > 15);
-
-      if (currentScrollY <= 20) {
-        setHidden(false);
-      } else if (currentScrollY > lastScrollY && currentScrollY > 60) {
-        // Scrolling down -> hide navbar
-        setHidden(true);
-        setProjectsDropdownOpen(false);
-        setMobileMenuOpen(false);
-      } else if (currentScrollY < lastScrollY) {
-        // Scrolling up -> reveal navbar
-        setHidden(false);
-      }
-
-      setLastScrollY(currentScrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY]);
 
   const handleNavClick = (view: string) => {
     onNavigate(view);
     setMobileMenuOpen(false);
-    setProjectsDropdownOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 transform ${
-        hidden
-          ? '-translate-y-full opacity-0 pointer-events-none'
-          : 'translate-y-0 opacity-100'
-      } ${
-        scrolled
-          ? 'bg-[#F7F4EE] border-b border-[#E5DFD5] py-3'
-          : 'bg-transparent py-4 border-b border-transparent'
-      }`}
-    >
+    <header className="absolute top-0 left-0 right-0 z-40 py-4 bg-transparent border-b border-transparent">
       <div className="max-w-6xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Left: Apple-style Minimal Portfolio Branding */}
         <button
