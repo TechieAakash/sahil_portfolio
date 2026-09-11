@@ -55,9 +55,6 @@ export const MakaanCaseStudy: React.FC<MakaanCaseStudyProps> = ({
               </span>
             ))}
           </div>
-          <div className="font-mono text-xs text-stone-500">
-            Shift: Controlling Appliances → Expressing Intentions
-          </div>
         </div>
 
         {/* Hero Slides (Pages 4 & 5) */}
