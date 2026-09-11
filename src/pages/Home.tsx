@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowUpRight, ArrowRight, Cpu, Users, Sparkles } from 'lucide-react';
-import { SAHIL_PROFILE, PROJECTS_OVERVIEW } from '../data/portfolioData';
 
 interface HomeProps {
   onSelectProject: (projectId: string) => void;
@@ -257,9 +256,9 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
         </div>
       </section>
 
-      {/* 3. ABOUT / MEET SAHIL — EXECUTIVE BENTO (NO PHOTO, SUBTLE SANDY SURFACES) */}
+      {/* 3. ABOUT / MEET SAHIL — DIRECT ON SANDY TEXTURE WITHOUT WHITE BACKGROUND */}
       <section id="about" className="py-24 px-6 md:px-12 max-w-6xl mx-auto border-t border-[#E5DFD5]">
-        <div className="mb-12">
+        <div className="mb-10">
           <span className="font-mono text-xs uppercase tracking-widest text-[#736E65] block mb-1">
             Design Leadership
           </span>
@@ -268,105 +267,71 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
           </h2>
         </div>
 
-        {/* Bento Grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          {/* Main Statement Card (7 cols) */}
-          <div className="md:col-span-7 sandy-card p-8 md:p-10 rounded-3xl flex flex-col justify-between space-y-6">
-            <div className="space-y-4">
-              <span className="font-mono text-xs uppercase tracking-widest text-[#736E65]">
-                Philosophy &amp; Narrative
-              </span>
-              <p className="text-lg md:text-xl text-[#1D1D1F] leading-relaxed font-normal">
-                {SAHIL_PROFILE.bioParagraphs[0]}
-              </p>
-              <p className="text-sm md:text-base text-[#555047] leading-relaxed font-light">
-                {SAHIL_PROFILE.bioParagraphs[1]}
-              </p>
-            </div>
-
-            <div className="pt-6 border-t border-[#E5DFD5] flex items-center justify-between text-xs font-mono text-[#736E65]">
-              <span>Sahil Husain</span>
-              <span>New Delhi, India</span>
-            </div>
+        {/* Widened Philosophy & Narrative Card — No white background, matching sandy texture */}
+        <div className="w-full rounded-3xl border border-[#E5DFD5] bg-transparent p-8 md:p-12 mb-8 transition-all hover:border-[#D5CDBD]">
+          <div className="space-y-6 max-w-4xl">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#736E65] block">
+              Philosophy &amp; Narrative
+            </span>
+            <p className="text-xl md:text-2xl text-[#1D1D1F] leading-relaxed font-normal">
+              I've had the opportunity to work across multidisciplinary projects that sit at the intersection of technology, people and everyday experiences. My work has allowed me to explore diverse problem spaces.
+            </p>
+            <p className="text-base md:text-lg text-[#3E3A33] leading-relaxed font-light">
+              Working across different domains has helped me understand that great experiences are created when technology, functionality and human behaviour come together. As I continue evolving as a designer, I aim to explore deeper product thinking &amp; creating experiences that are not only usable but thoughtful adaptive and meaningful to the people who interact with them.
+            </p>
           </div>
 
-          {/* Right Column: Credentials & Academic Foundation (5 cols) */}
-          <div className="md:col-span-5 flex flex-col gap-6">
-            <div className="sandy-card p-8 rounded-3xl flex-1 flex flex-col justify-between">
-              <div>
-                <span className="font-mono text-xs uppercase tracking-widest text-[#736E65] block mb-3">
-                  Design Education
-                </span>
-                <div className="space-y-4">
-                  <div className="p-4 rounded-2xl bg-[#F8F5EE] border border-[#E5DFD5]">
-                    <span className="font-mono text-[11px] text-[#736E65] uppercase tracking-wider block">
-                      Postgraduate
-                    </span>
-                    <span className="text-base font-bold text-[#1D1D1F] block mt-0.5">
-                      M.Des — NID India
-                    </span>
-                    <span className="text-xs text-[#555047]">
-                      National Institute of Design
-                    </span>
-                  </div>
-
-                  <div className="p-4 rounded-2xl bg-[#F8F5EE] border border-[#E5DFD5]">
-                    <span className="font-mono text-[11px] text-[#736E65] uppercase tracking-wider block">
-                      Undergraduate
-                    </span>
-                    <span className="text-base font-bold text-[#1D1D1F] block mt-0.5">
-                      B.Des — NIFT India
-                    </span>
-                    <span className="text-xs text-[#555047]">
-                      National Institute of Fashion Technology
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-4 pt-4 border-t border-[#E5DFD5] font-mono text-xs text-[#736E65]">
-                Rigorous Form &amp; User Research Foundation
-              </div>
+          <div className="mt-8 pt-6 border-t border-[#E5DFD5] flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-mono text-sm font-semibold text-[#1D1D1F]">
+            <div className="flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-[#1D1D1F]" />
+              <span>Sahil Husain</span>
             </div>
+            <span>New Delhi, India</span>
           </div>
         </div>
 
-        {/* 3 Core Intersection Pillars */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-          <div className="sandy-card p-6 rounded-3xl">
-            <div className="w-10 h-10 rounded-2xl bg-[#F3EFE7] border border-[#E5DFD5] flex items-center justify-center mb-4">
-              <Cpu className="w-5 h-5 text-[#1D1D1F]" />
+        {/* 3 Core Intersection Pillars — No white background, matching sandy texture behind */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="rounded-3xl border border-[#E5DFD5] bg-transparent hover:border-[#D5CDBD] p-6 sm:p-8 transition-all flex flex-col justify-between group">
+            <div>
+              <div className="w-12 h-12 rounded-2xl bg-[#EFE9DE] border border-[#DFD8CC] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                <Cpu className="w-6 h-6 text-[#1D1D1F]" />
+              </div>
+              <h4 className="text-lg md:text-xl font-bold text-[#1D1D1F] mb-2.5">
+                Technology
+              </h4>
+              <p className="text-sm text-[#3E3A33] leading-relaxed">
+                Understanding systemic capabilities, connected ecosystems, and conversational intelligent layers like Makaan.
+              </p>
             </div>
-            <h4 className="text-base font-bold text-[#1D1D1F] mb-1">
-              Technology
-            </h4>
-            <p className="text-xs text-[#555047] leading-relaxed">
-              Understanding systemic capabilities, connected ecosystems, and conversational intelligent layers like Makaan.
-            </p>
           </div>
 
-          <div className="sandy-card p-6 rounded-3xl">
-            <div className="w-10 h-10 rounded-2xl bg-[#F3EFE7] border border-[#E5DFD5] flex items-center justify-center mb-4">
-              <Users className="w-5 h-5 text-[#1D1D1F]" />
+          <div className="rounded-3xl border border-[#E5DFD5] bg-transparent hover:border-[#D5CDBD] p-6 sm:p-8 transition-all flex flex-col justify-between group">
+            <div>
+              <div className="w-12 h-12 rounded-2xl bg-[#EFE9DE] border border-[#DFD8CC] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                <Users className="w-6 h-6 text-[#1D1D1F]" />
+              </div>
+              <h4 className="text-lg md:text-xl font-bold text-[#1D1D1F] mb-2.5">
+                People
+              </h4>
+              <p className="text-sm text-[#3E3A33] leading-relaxed">
+                In-depth multi-regional home immersions, authentic user verbatims, and cultural understanding across cohorts.
+              </p>
             </div>
-            <h4 className="text-base font-bold text-[#1D1D1F] mb-1">
-              People
-            </h4>
-            <p className="text-xs text-[#555047] leading-relaxed">
-              In-depth multi-regional home immersions, authentic user verbatims, and cultural understanding across cohorts.
-            </p>
           </div>
 
-          <div className="sandy-card p-6 rounded-3xl">
-            <div className="w-10 h-10 rounded-2xl bg-[#F3EFE7] border border-[#E5DFD5] flex items-center justify-center mb-4">
-              <Sparkles className="w-5 h-5 text-[#1D1D1F]" />
+          <div className="rounded-3xl border border-[#E5DFD5] bg-transparent hover:border-[#D5CDBD] p-6 sm:p-8 transition-all flex flex-col justify-between group">
+            <div>
+              <div className="w-12 h-12 rounded-2xl bg-[#EFE9DE] border border-[#DFD8CC] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                <Sparkles className="w-6 h-6 text-[#1D1D1F]" />
+              </div>
+              <h4 className="text-lg md:text-xl font-bold text-[#1D1D1F] mb-2.5">
+                Everyday Experiences
+              </h4>
+              <p className="text-sm text-[#3E3A33] leading-relaxed">
+                Crafting usable, thoughtful, adaptive, and meaningful experiences that simplify life and reduce friction.
+              </p>
             </div>
-            <h4 className="text-base font-bold text-[#1D1D1F] mb-1">
-              Everyday Experiences
-            </h4>
-            <p className="text-xs text-[#555047] leading-relaxed">
-              Crafting usable, thoughtful, adaptive, and meaningful experiences that simplify life and reduce friction.
-            </p>
           </div>
         </div>
       </section>

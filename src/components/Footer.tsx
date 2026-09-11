@@ -113,18 +113,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('about')}
+                  onClick={() => {
+                    onNavigate('home');
+                    setTimeout(() => {
+                      document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                  }}
                   className="hover:text-white transition-colors"
                 >
                   Meet Sahil
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => onNavigate('philosophy')}
-                  className="hover:text-white transition-colors"
-                >
-                  Design Philosophy
                 </button>
               </li>
             </ul>
