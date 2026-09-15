@@ -108,7 +108,7 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
               <img
                 src="/images/samsung-wordmark.png"
                 alt="Samsung Electronics"
-                className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain"
               />
             </div>
 
@@ -159,11 +159,11 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
             className="group relative cursor-pointer rounded-3xl sandy-card hover:border-[#D5CDBD] transition-all duration-300 hover:shadow-xl overflow-hidden"
           >
             {/* Full breadth cover banner seamlessly fitting the slide box */}
-            <div className="w-full h-56 sm:h-72 md:h-80 lg:h-96 relative overflow-hidden transition-all duration-500 bg-stone-100">
+            <div className="w-full relative overflow-hidden bg-stone-100">
               <img
                 src="/images/sneaker-care-cover.png"
                 alt="Samsung AI Wash Cycle — Sneaker Care"
-                className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-auto block"
               />
             </div>
 
