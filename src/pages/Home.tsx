@@ -104,11 +104,11 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
             className="group relative cursor-pointer rounded-3xl sandy-card hover:border-[#D5CDBD] transition-all duration-300 hover:shadow-xl overflow-hidden"
           >
             {/* Full breadth cover banner seamlessly fitting the slide box */}
-            <div className="w-full h-56 sm:h-72 md:h-80 lg:h-96 bg-black flex items-center justify-center relative overflow-hidden transition-all duration-500">
+            <div className="w-full relative overflow-hidden bg-stone-100">
               <img
-                src="/images/samsung-wordmark.png"
-                alt="Samsung Electronics"
-                className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain"
+                src="/images/makaan-cover.png"
+                alt="Samsung Connected Living — Project Makaan"
+                className="w-full h-auto block"
               />
             </div>
 
