@@ -66,12 +66,6 @@ export const PdfPageImage: React.FC<PdfPageImageProps> = ({
             </div>
           )}
 
-          {/* Page Badge */}
-          {pageNumber && (
-            <div className="absolute bottom-2.5 right-2.5 px-2 py-1 rounded bg-stone-900/70 text-white text-[11px] font-mono tracking-wider backdrop-blur-sm">
-              P.{String(pageNumber).padStart(2, '0')}
-            </div>
-          )}
         </div>
       </div>
     </figure>
