@@ -162,7 +162,7 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
             <div className="w-full relative overflow-hidden bg-stone-100">
               <img
                 src="/images/sneaker-care-cover.png"
-                alt="Samsung AI Wash Cycle — Sneaker Care"
+                alt="Samsung Sneaker Wash — Sneaker Care"
                 className="w-full h-auto block"
               />
             </div>
