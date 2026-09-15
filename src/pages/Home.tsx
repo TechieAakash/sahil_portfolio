@@ -103,17 +103,17 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
             onClick={() => onSelectProject('makaan')}
             className="group relative cursor-pointer rounded-3xl sandy-card p-8 md:p-12 hover:border-[#D5CDBD] transition-all duration-300 hover:shadow-xl overflow-hidden"
           >
-            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
-              <div className="space-y-4 max-w-2xl">
-                <div className="flex items-center gap-3">
-                  <span className="px-3 py-1 rounded-full bg-[#FBF0F2] text-[#8C253B] font-mono text-xs font-semibold border border-[#F3D7DC]">
-                    Project 01 • Samsung Electronics
-                  </span>
-                  <span className="font-mono text-xs text-[#736E65]">
-                    #HarGharKuchKehtaHai
-                  </span>
-                </div>
+            {/* Cover Image in adequate visible size */}
+            <div className="mb-8 w-full max-w-sm sm:max-w-md md:max-w-lg aspect-[16/9] rounded-2xl overflow-hidden bg-black flex items-center justify-center shadow-md border border-stone-800/30 transition-transform duration-500 group-hover:scale-[1.01]">
+              <img
+                src="/images/samsung-cover.png"
+                alt="Samsung Electronics — Project Makaan Cover"
+                className="w-full h-full object-contain"
+              />
+            </div>
 
+            <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+              <div className="space-y-4 max-w-2xl">
                 <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight text-[#1D1D1F] group-hover:text-[#8C253B] transition-colors">
                   Project Makaan
                 </h3>
