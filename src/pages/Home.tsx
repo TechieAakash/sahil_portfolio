@@ -156,50 +156,53 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
           {/* Card 02: Sneaker Care */}
           <div
             onClick={() => onSelectProject('sneaker-care')}
-            className="group relative cursor-pointer rounded-3xl sandy-card p-8 md:p-12 hover:border-[#D5CDBD] transition-all duration-300 hover:shadow-xl overflow-hidden"
+            className="group relative cursor-pointer rounded-3xl sandy-card hover:border-[#D5CDBD] transition-all duration-300 hover:shadow-xl overflow-hidden"
           >
-            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
-              <div className="space-y-4 max-w-2xl">
-                <div className="flex items-center gap-3">
-                  <span className="px-3 py-1 rounded-full bg-[#EEF5EC] text-[#385A2E] font-mono text-xs font-semibold border border-[#D5E6D2]">
-                    Project 02 • Connected Experience
-                  </span>
-                  <span className="font-mono text-xs text-[#736E65]">
-                    $4.5 Bn Market by 2030
-                  </span>
+            {/* Full breadth cover banner seamlessly fitting the slide box */}
+            <div className="w-full h-56 sm:h-72 md:h-80 lg:h-96 relative overflow-hidden transition-all duration-500 bg-stone-100">
+              <img
+                src="/images/sneaker-care-cover.png"
+                alt="Samsung AI Wash Cycle — Sneaker Care"
+                className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            {/* Content below the cover image */}
+            <div className="p-8 md:p-12">
+              <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+                <div className="space-y-4 max-w-2xl">
+                  <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight text-[#1D1D1F] group-hover:text-[#385A2E] transition-colors">
+                    Sneaker Care
+                  </h3>
+
+                  <h4 className="text-lg md:text-xl font-medium text-[#555047]">
+                    Specialized Care Experience — Bridging Indian Gen-Z sneakerhead culture with material-aware wash cycles
+                  </h4>
+
+                  <p className="text-sm text-[#736E65] leading-relaxed max-w-xl">
+                    Addressing the gap between high-value sneaker culture and damaging wash methods through downloadable material-aware cycles for Mesh, Canvas, Leather, Suede, and Synthetics.
+                  </p>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
+                      Service Design
+                    </span>
+                    <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
+                      Product Feature Innovation
+                    </span>
+                    <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
+                      5.87% CAGR
+                    </span>
+                  </div>
                 </div>
 
-                <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight text-[#1D1D1F] group-hover:text-[#385A2E] transition-colors">
-                  Sneaker Care
-                </h3>
-
-                <h4 className="text-lg md:text-xl font-medium text-[#555047]">
-                  Specialized Care Experience — Bridging Indian Gen-Z sneakerhead culture with material-aware wash cycles
-                </h4>
-
-                <p className="text-sm text-[#736E65] leading-relaxed max-w-xl">
-                  Addressing the gap between high-value sneaker culture and damaging wash methods through downloadable material-aware cycles for Mesh, Canvas, Leather, Suede, and Synthetics.
-                </p>
-
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2 pt-2">
-                  <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
-                    Service Design
-                  </span>
-                  <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
-                    Product Feature Innovation
-                  </span>
-                  <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
-                    5.87% CAGR
-                  </span>
-                </div>
-              </div>
-
-              {/* Action pill */}
-              <div className="flex items-center justify-end">
-                <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#1D1D1F] group-hover:bg-[#385A2E] text-white font-medium text-xs font-mono tracking-wider uppercase transition-all shadow-sm">
-                  <span>View Case Study</span>
-                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                {/* Action pill */}
+                <div className="flex items-center justify-end">
+                  <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#1D1D1F] group-hover:bg-[#385A2E] text-white font-medium text-xs font-mono tracking-wider uppercase transition-all shadow-sm">
+                    <span>View Case Study</span>
+                    <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </div>
                 </div>
               </div>
             </div>
