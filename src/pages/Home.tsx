@@ -123,23 +123,6 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
                   <h4 className="text-lg md:text-xl font-medium text-[#555047]">
                     Future of Connected Living — Reimagining connected homes through conversational AI
                   </h4>
-
-                  <p className="text-sm text-[#736E65] leading-relaxed max-w-xl">
-                    Comprehensive domestic immersion across 5 Indian cities (Delhi, Guwahati, Hyderabad, Indore, Mumbai) investigating the transition from controlling appliances to expressing natural human intent.
-                  </p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
-                      AI Interaction Design
-                    </span>
-                    <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
-                      SmartThings Intelligence
-                    </span>
-                    <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
-                      5 Immersion Zones
-                    </span>
-                  </div>
                 </div>
 
                 {/* Action pill */}
@@ -178,23 +161,6 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
                   <h4 className="text-lg md:text-xl font-medium text-[#555047]">
                     Specialized Care Experience — Bridging Indian Gen-Z sneakerhead culture with material-aware wash cycles
                   </h4>
-
-                  <p className="text-sm text-[#736E65] leading-relaxed max-w-xl">
-                    Addressing the gap between high-value sneaker culture and damaging wash methods through downloadable material-aware cycles for Mesh, Canvas, Leather, Suede, and Synthetics.
-                  </p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
-                      Service Design
-                    </span>
-                    <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
-                      Product Feature Innovation
-                    </span>
-                    <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
-                      5.87% CAGR
-                    </span>
-                  </div>
                 </div>
 
                 {/* Action pill */}
@@ -227,29 +193,12 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
                 <div className="space-y-4 max-w-2xl">
                   <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight text-[#1D1D1F] group-hover:text-[#5A2A78] transition-colors">
-                    2026 CMF Design
+                    2026 Trends Forecast
                   </h3>
 
                   <h4 className="text-lg md:text-xl font-medium text-[#555047]">
-                    Trends Forecast for Galaxy — Emerging color narratives rooted in consumer sentiment
+                    Trends Forecast for Galaxy — Emerging visual narratives rooted in consumer sentiment
                   </h4>
-
-                  <p className="text-sm text-[#736E65] leading-relaxed max-w-xl">
-                    Deep dive into lifestyle immersions, global consumer drivers ("Gently Pleasant"), South West Asia regional drivers ("Uplifted Brilliance"), linear and wave pattern studies, and the 2026 Master Pantone Matrix.
-                  </p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
-                      CMF Strategy
-                    </span>
-                    <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
-                      Pantone Color Proposals
-                    </span>
-                    <span className="px-3 py-1 rounded-full bg-[#F3EFE7] border border-[#E5DFD5] text-xs font-mono text-[#555047]">
-                      Material Innovation
-                    </span>
-                  </div>
                 </div>
 
                 {/* Action pill */}
