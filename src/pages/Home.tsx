@@ -268,9 +268,6 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
       {/* 3. ABOUT / MEET SAHIL — DIRECT ON SANDY TEXTURE WITHOUT WHITE BACKGROUND */}
       <section id="about" className="py-24 px-6 md:px-12 max-w-6xl mx-auto border-t border-[#E5DFD5]">
         <div className="mb-10">
-          <span className="font-mono text-xs uppercase tracking-widest text-[#736E65] block mb-1">
-            Design Leadership
-          </span>
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[#1D1D1F]">
             Meet Sahil
           </h2>
@@ -280,7 +277,7 @@ export const Home: React.FC<HomeProps> = ({ onSelectProject }) => {
         <div className="w-full rounded-3xl border border-[#E5DFD5] bg-transparent p-8 md:p-12 mb-8 transition-all hover:border-[#D5CDBD]">
           <div className="space-y-6 max-w-4xl">
             <span className="font-mono text-xs uppercase tracking-widest text-[#736E65] block">
-              Philosophy &amp; Narrative
+              Hello
             </span>
             <p className="text-xl md:text-2xl text-[#1D1D1F] leading-relaxed font-normal">
               I've had the opportunity to work across multidisciplinary projects that sit at the intersection of technology, people and everyday experiences. My work has allowed me to explore diverse problem spaces.
