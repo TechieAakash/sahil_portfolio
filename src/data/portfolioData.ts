@@ -64,14 +64,14 @@ export const PROJECTS_OVERVIEW: ProjectSummary[] = [
     id: "galaxy-cmf",
     number: "03",
     title: "Trends Forecast for Galaxy",
-    projectName: "2026 CMF Design",
-    subtitle: "Emerging color narratives rooted in consumer sentiment for Galaxy A, M & F series",
+    projectName: "2026 Trends Forecast",
+    subtitle: "Emerging visual narratives rooted in consumer sentiment for Galaxy A, M & F series",
     client: "Samsung Electronics",
     categories: ["CMF Design", "Trend Forecasting", "Consumer Sentiment", "Material Innovation"],
     coverSlide: "/pdf-pages/page-24.webp",
     accentColor: "#5A2A78",
     bgAccent: "#F6F1FA",
-    overviewNarrative: "To deep dive into lifestyle immersions & cross industry trends for identifying emerging color narratives rooted in consumer sentiment."
+    overviewNarrative: "To deep dive into lifestyle immersions & cross industry trends for identifying emerging visual narratives rooted in consumer sentiment."
   }
 ];
 
@@ -420,11 +420,11 @@ export const GALAXY_CMF_DATA = {
   id: "galaxy-cmf",
   number: "03",
   title: "Trends Forecast for Galaxy",
-  projectName: "2026 CMF Design",
-  subtitle: "Emerging color narratives rooted in consumer sentiment for Galaxy A, M & F series",
+  projectName: "2026 Trends Forecast",
+  subtitle: "Emerging visual narratives rooted in consumer sentiment for Galaxy A, M & F series",
   client: "Samsung Electronics",
   categories: ["CMF Design", "Trend Forecasting", "Consumer Sentiment", "Material Innovation"],
-  scope: "To deep dive into lifestyle immersions & cross industry trends for identifying emerging color narratives rooted in consumer sentiment for Galaxy A,M & F series",
+  scope: "To deep dive into lifestyle immersions & cross industry trends for identifying emerging visual narratives rooted in consumer sentiment for Galaxy A,M & F series",
 
   marketScenario: {
     title: "Expansion of Mid & High price segments — Growing SKUs globally",

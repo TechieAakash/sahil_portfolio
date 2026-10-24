@@ -29,13 +29,13 @@ export const GalaxyCmfCaseStudy: React.FC<GalaxyCmfCaseStudyProps> = ({
 
         <div className="space-y-4 max-w-4xl">
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-stone-950 tracking-tight uppercase leading-[0.95]">
-            2026 CMF Design
+            2026 Trends Forecast
           </h1>
           <h2 className="text-xl sm:text-2xl md:text-3xl text-stone-700 font-light">
             Trends Forecast for Galaxy (Galaxy A, M &amp; F Series)
           </h2>
           <p className="text-lg md:text-xl text-stone-900 font-medium pt-2 leading-relaxed">
-            To deep dive into lifestyle immersions &amp; cross industry trends for identifying emerging color narratives rooted in consumer sentiment for Galaxy A,M &amp; F series
+            To deep dive into lifestyle immersions &amp; cross industry trends for identifying emerging visual narratives rooted in consumer sentiment for Galaxy A,M &amp; F series
           </p>
         </div>
 
